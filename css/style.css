@@ -1,0 +1,32 @@
+body {
+    background-color: cornflowerblue;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid > * {
+	aspect-ratio: 1/1;
+	border: 2px solid rgb(145, 37, 37);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cell-click {
+    background-color: rgb(0, 192, 0);
+}
