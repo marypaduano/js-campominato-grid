@@ -7,6 +7,9 @@ console.log(sideGrid, numCell)
 
 const gridElement = document.querySelector('.grid')
 console.log(gridElement)
+const btnElement = document.querySelector('.btn-play')
+
+btnElement.addEventListener('click', function (){
 
 for (let i = 0; i < numCell; i++) {
     let n = i + 1
@@ -16,7 +19,6 @@ for (let i = 0; i < numCell; i++) {
 }
 
 const cellElements = document.querySelectorAll('.cell')
-console.log(cellElements)
 
 for (let i = 0; i < cellElements.length; i++) {
     const cell = cellElements[i]
@@ -26,6 +28,8 @@ for (let i = 0; i < cellElements.length; i++) {
         onClick(cell)
     })
 }
+
+})
 
 function onClick(el) {
     el.classList.toggle('cell-click')
