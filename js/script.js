@@ -23,10 +23,12 @@ for (let i = 0; i < cellElements.length; i++) {
 
     cell.addEventListener('click', function () {
         console.log(i + 1)
+        onClick(cell)
     })
 }
 
-function onClick() {
-    console.log(i + 1)
+function onClick(el) {
+    el.classList.toggle('cell-click')
+    return
 }
 
